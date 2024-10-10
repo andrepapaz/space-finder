@@ -1,0 +1,16 @@
+@path = https://kkr0sc7iz0.execute-api.eu-west-1.amazonaws.com/prod/
+
+
+###
+GET {{path}}spaces
+
+###
+POST {{path}}spaces
+content-type: application/json
+
+    {
+        "location": "Paris"
+    }
+
+###
+GET {{path}}spaces?id=1234
